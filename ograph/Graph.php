@@ -3,26 +3,15 @@
  * 
  **/
 namespace ograph;
+require_once __DIR__.'/Entity.php';
 
-class Graph
+class Graph extends \ograph\Entity
 {
     /**
      * @var array
      **/
     protected static $_graphs;
 
-    /**
-     * @var string    
-     **/
-    protected $id;
-
-    /**
-     * @param string $id
-     **/
-    private function __construct($id)
-    {
-        $this->id = $id;    
-    }
 
     /**
      * @param string $id
